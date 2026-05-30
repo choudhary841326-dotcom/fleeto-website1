@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleeto - Fast, Reliable Deliveries</title>
+  <style>
+    :root {
+      --primary: #1e88e5;
+      --secondary: #1565c0;
+      --accent: #ff9800;
+      --light: #f5f5f5;
+      --dark: #333;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: var(--dark);
+      background-color: white;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { margin: 0; font-size: 1.8em; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+    }
+    .hero {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    .hero h2 { font-size: 2.5em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em; margin-bottom: 30px; }
+    .cta a {
+      background: var(--accent);
+      color: white;
+      padding: 12px 20px;
+      margin: 10px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .section h3 { color: var(--primary); margin-bottom: 20px; }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: var(--light);
+      border-radius: 10px;
+      padding: 30px;
+      width: 280px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h4 { color: var(--secondary); margin-bottom: 10px; }
+    .card p { font-size: 0.95em; }
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      background: var(--primary);
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      .cards { flex-direction: column; align-items: center; }
+      header { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fleeto</h1>
+    <nav>
+      <a href="#shop">Shop Portal</a>
+      <a href="#driver">Driver Portal</a>
+      <a href="#admin">Admin</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Fast, Reliable Deliveries Made Simple</h2>
+    <p>Connecting Businesses, Drivers, and Customers</p>
+    <div class="cta">
+      <a href="#shop">Book a Delivery</a>
+      <a href="#driver">Become a Driver</a>
+      <a href="#admin">Login</a>
+    </div>
+  </section>
+
+  <section class="section" id="shop">
+    <h3>For Businesses</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Manage Deliveries</h4>
+        <p>Track orders, wallet balances, and delivery status in real time.</p>
+        <a href="#">Get Started</a>
+      </div>
+      <div class="card">
+        <h4>For Drivers</h4>
+        <p>Earn money with flexible delivery jobs and instant payouts.</p>
+        <a href="#">Join Now</a>
+      </div>
+      <div class="card">
+        <h4>For Admins</h4>
+        <p>Monitor operations, performance, and transactions securely.</p>
+        <a href="#">Admin Login</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Fleeto</h3>
+    <p>Fleeto is your trusted delivery partner, connecting shops, drivers, and customers seamlessly across Oman and beyond.</p>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: support@fleeto.com | Phone: +968‑XXXXXXX</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Fleeto. All rights reserved.</p>
+  </footer>
+</body>
+</html>
